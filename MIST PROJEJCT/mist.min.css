@@ -1,0 +1,539 @@
+/*
+
+* Copyright (c) MIST JS API 2024 - 2025
+* Written by ghgltggamer
+* Written date of starting - 23-04-2024
+
+* License
+* MIT License
+
+* Copyright (c) 2024 ghgltggamer
+* 
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+* 
+* The above copyright notice and this permission notice shall be included in all
+* copies or substantial portions of the Software.
+* 
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+
+*/
+
+@font-face{
+	
+	font-family: Raleway;
+	src: url("installed/fonts/Raleway-Regular.ttf");
+	
+}
+
+@font-face{
+	
+	font-family: Oswald;
+	src: url("installed/fonts/Oswald-Regular.ttf");
+	
+}
+
+@font-face{
+	
+	font-family: Writing;
+	src: url("installed/fonts/Writing.otf");
+	
+}
+
+@font-face{
+	
+	font-family: Ubuntu_Mono;
+	src: url("installed/fonts/UbuntuMono_R.ttf");
+	
+}
+
+@font-face{
+	
+	font-family: Ubuntu;
+	src: url("installed/fonts/Ubuntu-M.ttf");
+	
+}
+
+@font-face{
+	
+	font-family: Ubuntu_C;
+	src: url("installed/fonts/Ubuntu-C.ttf");
+	
+}
+
+@font-face{
+	
+	font-family: RobotoCondensed;
+	src: url("installed/fonts/RobotoCondensed-Regular.ttf");
+	
+}
+
+@font-face{
+	
+	font-family: RobotoCondensed_Intalic;
+	src: url("installed/fonts/RobotoCondensed-Italic.ttf");
+	
+}
+
+@font-face{
+	
+	font-family: Outdoor;
+	src: url("installed/fonts/Outdoor.otf");
+	
+}
+
+@font-face{
+	
+	font-family: Metropolis;
+	src: url("installed/fonts/Metropolis-Regular.ttf");
+	
+}
+
+@font-face{
+	
+	font-family: good_times;
+	src: url("installed/fonts/good times rg.otf");
+	
+}
+
+@font-face{
+	
+	font-family: GlacialIndifference;
+	src: url("installed/fonts/GlacialIndifference-Regular.otf");
+	
+}
+
+@font-face{
+	
+	font-family: Exo;
+	src: url("installed/fonts/Exo-Regular.otf");
+	
+}
+
+@font-face{
+	
+	font-family: Coolvetica;
+	src: url("installed/fonts/coolvetica rg.otf");
+	
+}
+
+@font-face{
+	
+	font-family: AxelBrush;
+	src: url("installed/fonts/AxelBrush-Regular.ttf");
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.MIST-CANVAS{
+	
+	background-color: whitesmoke;
+	height: 200;
+	width: 300;
+	box-shadow: 0px 0px 10px black;
+	border: 0.2px solid black;
+	color: black;
+	font-family: Coolvetica;
+	
+}
+
+
+
+.MIST-BUTTON{
+	
+	display: flex;
+	-webkit-tap-highlight-color: transparent;
+	height: 50px;
+	width: 150px;
+	background: red;
+	color: black;
+	font-family: Raleway;
+	align-items: center;
+	justify-content: center;
+	transition: 0.5s;
+	
+}
+
+.MIST-BUTTON button{
+	
+	width: 100%;
+	height: 50px;
+	background: transparent;
+	border: 0px solid transparent;
+	transition: 0.5s;
+	font-family: Raleway;
+	border-radius: 20px;
+	font-size: 30px;
+	
+}
+
+
+.MIST-BUTTON-RIPPLE{
+	
+	animation-name: mist-btn-ripple;
+	animation-direction: alternate;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	-webkit-tap-highlight-color: transparent;
+	
+}
+
+
+.MIST-BUTTON button:active{
+	
+	animation-name: mist-btn-ripple;
+	animation-direction: alternate;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	
+}
+
+@keyframes mist-btn-ripple{
+	
+	0%{
+		
+		width: 1px;
+		background: transparent;
+		
+	}
+	
+	
+	
+	50%{
+		
+		width: 50%;
+		background: rgba(255, 255, 255, 0.7);
+		
+	}
+	
+	
+	75%{
+		
+		width: 75%;
+		background: rgba(255, 255, 255, 0.5);
+		
+	}
+	
+	
+	95%{
+		width: 95%;
+		background: rgba(255, 255, 255, 0.3);
+	}
+	
+	
+	100%{
+		
+		width: 100%;
+		background: rgba(255, 255, 255, 0.1);
+		
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+.mist-window {
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	overflow: hidden; /* Prevent overflow */
+	user-select: none;
+  }
+
+  .mist-title-bar {
+	padding: 5px;
+	font-weight: bold;
+	white-space: nowrap; /* Prevent title overflow */
+	overflow: hidden;
+	text-overflow: ellipsis;
+	user-select: none;
+  }
+
+  .mist-terminate-button,
+  .mist-maximize-button,
+  .mist-minimize-button {
+	cursor: pointer;
+	border-radius: 10px;
+  }
+
+
+
+
+
+
+
+
+
+  /* Tab container styles */
+.tab-container {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	overflow: hidden;
+  }
+  
+  /* Tab styles */
+  .tab {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #f0f0f0;
+	color: #333;
+	cursor: pointer;
+	border-bottom: 1px solid #ccc;
+  }
+  
+  .tab.active {
+	background-color: #ddd;
+	border-bottom: 1px solid #ddd;
+  }
+  
+  /* Tab content styles */
+  .tab-content {
+	display: none;
+	padding: 20px;
+	border-top: 1px solid #ccc;
+  }
+  
+
+
+
+
+
+
+
+  /* Menu container styles */
+.menu-bar-container {
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0;
+  }
+  
+  /* Menu styles */
+/* CSS */
+.menu-bar-container {
+	position: relative;
+  }
+  
+  .menu {
+	display: inline-block;
+	margin-right: 20px; /* Add spacing between menu items */
+  }
+  
+  .menu-title {
+	cursor: pointer;
+  }
+  
+  .menu-items {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	display: none;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-top: none;
+	padding: 5px 0;
+  }
+  
+  .menu-items.visible {
+	display: block;
+  }
+  
+  .menu-item {
+	cursor: pointer;
+  }
+  
+  /* Hide default list icon */
+  details summary::-webkit-details-marker {
+	display: none;
+  }
+  
+  details summary {
+	list-style: none;
+  }
+  
+  .hidden {
+	display: none;
+  }
+  
+
+
+
+
+  /* MIST Panels */
+.MIST-Panel-Left{
+	padding: 10px;
+	border: 1px solid green;
+	border-left: 5px solid green;
+	background-color: rgba(0, 255, 0, 0.2);
+	color: black;
+	font-family: 'Exo';
+}
+
+
+
+
+
+
+/* Mist Canvas */
+.MIST-Canvas{
+	height: 300px;
+	width: 300px;
+	user-select: none;
+	background-color: whitesmoke;
+	/* border: 0.4px solid black; */
+	border-radius: 5px;
+	color: black;
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+	padding: 10px;
+	font-family: 'Exo';
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+/* widgets */
+.MIST-NTL-Widget-Textbox{
+	outline: 5px solid white;
+	border: 2px solid rgba(0,0,0,0.2);
+	border-radius: 5px;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+	height: 200px;
+	width: 300px;
+	padding: 10px;
+	font-family: 'Exo';
+	transition: 1s;
+	line-height: 20px;
+	letter-spacing: 2px;
+	word-spacing: 4px;
+}
+.MIST-NTL-Widget-Textbox:hover{
+	cursor: pointer;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+	border-color: rgba(0, 0, 0, 0.5);
+}
+.MIST-NTL-Widget-Textbox:focus{
+	cursor: crosshair;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+	border-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+
+
+/* Normal Textbox */
+.MIST-Widget-Textbox{
+	outline: none;
+	border: 2px solid silver;
+	color: black;
+	background-color: transparent;
+	padding: 10px;
+	font-family: Raleway;
+}
+
+.MIST-Widget-Textbox:hover{
+	border-color: gray;
+}
+
+.MIST-Widget-Textbox:active{
+	border-color: silver;
+}
+
+.MIST-Widget-Textbox:focus{
+	border-color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+/* button */
+.MIST-Widget-Button{
+	height: 50px;
+	width: 150px;
+	background-color: limegreen;
+	color: whitesmoke;
+	cursor: pointer;
+	border: 0px;
+	border-radius: 5px;
+}.MIST-Widget-Button:hover{
+	/* background-color: rgb(153, 255, 139); */
+	opacity: 0.5;
+}
+.MIST-Widget-Button:active{
+	opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* button */
+.MIST-NTL-Widget-Button{
+	height: 50px;
+	width: 150px;
+	background-color: limegreen;
+	color: whitesmoke;
+	cursor: pointer;
+	border: 0px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	transition: 0.3s;
+}.MIST-NTL-Widget-Button:hover{
+	/* background-color: rgb(153, 255, 139); */
+	opacity: 0.7;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.MIST-NTL-Widget-Button:active{
+	opacity: 0.9;
+	box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5);
+}
