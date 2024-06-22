@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #3B82F6;
+     --primary-color: #3B82F6;
     --secondary-color: #1E3A8A;
     --accent-color: #06B6D4;
     --background-color: #FFFFFF;
@@ -11,7 +11,7 @@
 
 
 
-body.light-theme {
+.light-theme {
     --primary-color: #3B82F6;
     --secondary-color: #1E3A8A;
     --accent-color: #06B6D4;
