@@ -1,0 +1,64 @@
+body {
+  background: whitesmoke;
+  font-family: Raleway;
+  margin: 0px;
+}
+
+
+#nav{
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 40px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+  position: fixed;
+  
+  width: 100%;
+}
+
+#nav button{
+  margin-left: 60px;
+  border: 0px;
+}
+
+#content{
+  margin-top: 60px;
+  padding: 10px;
+}
+
+
+
+*{
+  font-family: Raleway;
+}
+h1{
+  font-weight: normal;
+}
+
+button{
+  font-weight: bold;
+}
+
+
+
+
+#FAQs button{
+  margin-top: 15px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  border: 0px;
+}
+
+
+
+
+button{
+  user-select: none;
+}
+
+
+.nav-mobile button{
+  margin-left: 10px;
+}
