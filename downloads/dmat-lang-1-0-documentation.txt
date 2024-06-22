@@ -1,0 +1,113 @@
+DMAT 1.0 Official Documentation;
+Written by ghgltggamer officially;
+Writting started at : 19:51 , Sat Jun 22 2024;
+
+DMAT :
+What is DMAT ?
+DMAT is an computer language developed for 3d computer graphics manupulation with the help of speedy conversion. DMAT was officially developed for ALBEDO to PBR Material Conversion and it was written in C++ solely.
+
+Is DMAT an Programming Language?
+No, In traditional sense DMAT is not a programming language nor an Scripting or markup language exept DMAT is itself an Computer Language developed by Founder of FOZ DTX CORP , ghgltggamer.DMAT is totaly different from a traditional programming language because it lacks traditional features of a programming language like variables ,statements etc. DMAT also has an totaly different Syntax than a programming language which you will see very soon. DMAT also has an unique execution style, DMAT program processes everything after EXITING the program where a programing language processes everything before exiting the program.
+
+About current version
+. This documentation was written for DMAT (Lang 1.0) and may not be accurate for future DMAT releases or up versions of DMAT.
+. This version of DMAT only is able to convert ALBEDO Images into NORMAL, HEIGHT, ROUGHNESS AND METALIC maps.
+
+About ALBEDO
+ALBEDO is the plain image which defines how much colors comes to the image and how much the black and white light rays enters the image. In simple terms, ALBEDO is just the normal and plain image which you uses in your everyday life and DMAT will extract the PBR mappings & Siblings from this image.
+
+NORMAL MAPS:
+NORMAL MAPS are colour full images which describes how light is going to interact with surface. In simple terms, A NORMAL MAP is an image used to create fake depths and bumps by simulating light and fake shadows and these images are called mappings and a part of PBR Mappings which is commonly adapted for photorealism eg : Minecraft (Photorealstic Textures), PBR Materials.
+
+HEIGHT MAP:
+HEIGHT MAP are grayscaled images (Black & White Images) which actually generates real time bumps in the object. In simple terms, A HEIGHT MAP describes the 3d depths on the surface of the 3d object. It doesnot actually creates shadows or any other effects but it actually makes real time 3d bumps which can be resource intensive.
+
+
+Height Depth Fundametnals:
+Which surface = Tall
+Black Surface = Short
+
+Defination - How which white the area is that much tall it will be and How much black the area is that much deep the area will be. HEIGHT MAPS are also known as DISPLACEMENT MAPS.
+
+
+ROUGHNESS MAPS:
+ROUGHNESS MAPS are also grayscaled and these defines the smooth and rough surfaces on the objects. In simple terms, ROUGHNESS MAPS defines how much the light is going to reflected by the object.
+
+
+Fundamentals:
+White = Rough
+Black = Smooth & Reflective
+
+Theory : How much white the object is that much rough it would be and how much black the surface is that much smooth and reflective the surface will be.
+
+
+METALIC MAPS
+METALIC MAPS are same as roughness but they will tell how much metalic the object is. In simple terms, METALIC MAPS are those who makes your object real reflective with metalism on it.
+
+Fundamentals:
+White = Metalic
+Black = Non Metalic
+
+Theory L How much white the image is that much metalic the object will be and how much black the image is that much non metalic the object will be. METALIC MAPS are also known as Specular maps.
+
+____________________________________________________________________________________________
+
+
+DMAT USAGE:-
+
+
+
+
+*WE CAN PARSE ANYTHING here in DMAT 1.0.1*
+*THIS MATERIAL IS COMPILABLE WITH DMAT 1.0.1*
+*COPYRIGHT (C) GHGLTGGAMER*
+*WRITTING AT 17:43 AT 21 JUN 2024*
+*NOTE THAT DMAT CAN CHANGE THE SYNTAX IN FUTURE OR FUNCTIONS HERE USED MAY NOT BE AVAILABLE IN FUTURE WITH SAME NAME*
+
+*TUTORIAL*
+*DON'T WORRY ABOUT THE TEXT DMAT WILL IGNORE ANY TEXT IT WILL JUST COMPILE THE REQUIRED TEXT*
+*NOW LET'S TALK ABOUT DMAT A LITTLE BIT*
+*FIRSTLY DMAT IS A COMPUTER LANGUAGE NOT AN PROGRAMMING LANGUAGE IN TRADITIONAL SENSE BECAUSE IT HAS IT'S OWN SYNTAX AND IT'S VERY DIFFERENT FROM A PROGRAMMING LANGUAGE DMAT IS ONLY BUILDED FOR DEALING WITH COMPUTER GRAPHICS AND IT CAN CREATE HIGH WUALITY 3D MATERIALS FROM JUST AN ALBEDO IMAGE*
+
+*SO OBVEOUSLY WE NEED AN ALBEDO IMAGE TO BE LOADED AND IN MY CASE THE IMAGE IS cobblestone1.png BUT THE PROBLEM IS THAT DMAT DON'T KNEW ABOUT THE ALBEDO IMAGE SO IT WILL THROUGH ERRORS FOR LOADING ALBEDO BINARIES , IN ORDER TO FIX ERROR WE NEED TO TELL DMAT THAT WE ARE USING cobblestone1.png as ALBEDO IMAGE AND FOR THIS DMAT HAS AN MACRO CALLED "DMAT_ALBEDO" THIS TELLS DMAT THT WE HAS DEFINED THE ALBEDO AND FOR DATA PARSING IN DMAT WE USES : , DMAT is too strict for indentation so don't give any spaces while writting code and also note that , DMAT PROCESSES EVERY SINGLE LINE OF CODE FROM COMPILER PATH YOU NEED TO PROVIDE EXACT PATH TO YOUR FILES TO THE PARAMS FROM COMPILER NOTE*
+
+*LOADING cobblestone1.png*
+DMAT_ALBEDO:cobblestone1.png
+
+
+
+*DEFINING NORMAL, HEIGHT, ROUGHNESS, METALIC MAPS FILES WHICH WILL BE BUILDED* (Important whichout initalisation of these DMAT will never fill the memory for these files)
+DMAT_NORMALS:normal.png
+DMAT_HEIGHTS:height.png
+DMAT_ROUGHNESSS:roughness.png
+DMAT_METALICS:metalic.png
+
+
+*AND YEAH THAT'S IT NOW DMAT WILL PROCESS OUT MATERIAL FROM cobblestone1.png BUT IS this enough? No IN DMAT WE NEED TO TELL DMAT THAT WE ARE EXITING THE PROGRAM AND WE WANT TO FINALLY BUILD THE MATERIAL FROM MAIN ALBEDO, SO THAT DMAT CAN FREE THE MEMORY AND START FINAL BUILD BECAUSE BEFORE EXIT WE ARE JUST TELLING DMAT SETTINGS OF OUR MATERIAL BUT FOR FINAL BUILD WE NEED TO EXIT THE PROGRAM , I KNOW THIS IS PREETY WIERD BUT IT'S A PART OF DMAT SYNTAX AND THAT'S WHY DMAT IS NOT A PROGRAMMING LANGUAGE BECAUSE PROGRAMMING LANGUAGES PROCESSES DATA BEFORE EXTING THE PROGRAM BUT DMAT PROCESSES EVERYTHING AFTER EXITING THE PROGRAM BECASUE DMAT WANTS TO FREE THE MEMORY DIRECTLY*
+
+*FOR EXITING AND BUILDING THE PROGRAM WE HAS EXIT & BUILD MACRO*
+*EXITING ANF BUILDING*
+EXIT&BUILD
+
+
+
+How DMAT MACROS WORKS?
+EACH MACRO fills an DMAT Variable which is sdirectly stored in memory buffer
+
+DMAT_ALBEDO is used to define the ALBEDO
+DMAT_NORMALS is used to define the NORMAL MAP Output file
+DMAT_HEIGHTS is used to define the HRIGHT MAP Output file
+DMAT_ROUGHNESSS is used to define ROUGHNESS MAP Output file
+DMAT_METALIC is used to define METALIC MAP Output file
+EXIT&BUILD is used to final exit from the program this is important because without this DMAT will only fill up the memory buffer but not build the PBR files as DMAT processes everything after exiting the program.
+
+
+
+
+How to execute an DMAT FILE ?
+DMAT files are stored with .dmat extension and can be only compiled by DMAT API or DMAT INTEPRETER.
+DMAT API : Provides an C++ programmable way for executing the dmat code. (Not available for current and stable use)
+DMAT INTEPRETER : Download the Official DMAT INTERETER and execute the INTEPRETER , Finally enter the path to your dmat file and press enter. Best use is to place the intepreter where you stores the dmat files.
+
+
+Thanks for reading this documentation ended by ghgltggamerofficially at same day : 20:31
