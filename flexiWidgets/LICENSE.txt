@@ -1,0 +1,30 @@
+FOZ DTX LICENSE
+**FOZ DTX LICENSE**
+
+**FOR DEVELOPERS:**
+
+1. **Software Distribution:** Any software or item distributed under the FOZ DTX license must be freely available to users. This ensures users do not resort to potentially harmful or third-party sources for downloading the software.
+
+2. **Customization Options:** Developers must ensure that the software provides necessary customization options to users, eliminating the need for users to resort to third-party addons, software, or plugins for customization purposes.
+
+3. **Responsibility:** Developers are responsible for any activities associated with the use of the original software. However, developers are not responsible for any damage caused by viruses or third-party tools already present on the user’s system. Additionally, developers are not responsible for any damage caused by unauthorized modifications made by users through third-party sources.
+
+4. **Monetization:** Developers are permitted to implement in-app purchases or other monetization methods within the software, as long as the software itself remains freely available to users and complies with all other terms and conditions outlined in this license.
+
+5. **Data Privacy:** Developers and the software itself are strictly prohibited from copying or selling user personal or any type of data without the explicit and official permission of the user. Recording or sending user data without permission constitutes a severe violation of this license.
+
+**FOR USERS:**
+
+1. **Modification:** Users are prohibited from modifying any part of the software unofficially or using third-party tools without the official permission of the author or developer. Unauthorized modifications constitute a violation of the software license.
+
+2. **Distribution:** Users are not permitted to distribute the software on any platform, including their own, without the explicit permission of the official developer.
+
+3. **Storage:** Users may store the software on their own devices in any format. However, sharing the software with friends or family is strictly prohibited, as it may facilitate the spread of viruses or malware.
+
+**VIOLATION NOTICE:**
+
+Violation of the FOZ DTX license may result in legal action and termination of rights granted under the license. Developers or users found in violation of this license may be subject to penalties, including but not limited to fines, legal fees, and loss of privileges associated with the software. It is imperative to adhere to the terms and conditions outlined in this license to ensure compliance and uphold the integrity of the software and its distribution.
+
+Copyright (c) FlexiWidgets 2024
+Author ghgltggamer
+Permission Grant permission to read , write and edit and distribute FlexiWidgets custom.

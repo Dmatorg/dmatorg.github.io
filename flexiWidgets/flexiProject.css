@@ -1,0 +1,73 @@
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--hover-color);
+}
+
+.button:active {
+    background-color: var(--active-color);
+}
+
+.button:disabled {
+    background-color: var(--disabled-color);
+    cursor: not-allowed;
+}
+
+
+
+a{
+  color: var(--secondary-color);
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: Arial;
+}
+a:hover{
+  color: var(--hover-color);
+}
+a:active{
+  color: var(--active-color);
+}
+
+
+body.light-theme a{
+  color: var(--primary-color);
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: Arial;
+}
+
+
+body.light-theme a:hover{
+  color: var(--secondary-color);
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: Arial;
+}
+
+body.light-theme a:active{
+  color: var(--active-color);
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: Arial;
+}
