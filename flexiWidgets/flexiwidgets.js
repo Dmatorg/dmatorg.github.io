@@ -10,18 +10,14 @@ class Flexi_Widget {
   injectGlobalStyles() {
     const styles = `
       :root {
-        --primary-color: #1E3A8A;
-        --secondary-color: #3B82F6;
-        --accent-color: #06B6D4;
-        --background-color: #1F2937;
-        --text-color: #FFFFFF;
-        --hover-color: #2563EB;
-        --active-color: #1E40AF;
-        --disabled-color: #9CA3AF;
-        --ripple-color: rgba(255, 255, 255, 0.6);
-        --button-border-color: transparent;
-        --button-border-radius: 5px;
-        --shadow-color: var(--active-color);
+        --primary-color: #3B82F6;
+    --secondary-color: #1E3A8A;
+    --accent-color: #06B6D4;
+    --background-color: #FFFFFF;
+    --text-color: #1F2937;
+    --hover-color: #2563EB;
+    --active-color: #1E40AF;
+    --disabled-color: #9CA3AF;
       }
 
       body {
