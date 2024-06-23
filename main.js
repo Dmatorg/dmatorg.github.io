@@ -153,7 +153,8 @@ function Download(){
     <h2>
       DMAT Downloads
     </h2>
-    DMAT (Lang 1.0) - Linux : <a href="downloads/dmat-intepreter-1-0.out.zip" download="dmat-intepreter-1-0.out.zip">Download</a> | <a href="downloads/dmat-lang-1-0-source.zip" download="downloads/dmat-lang-1-0-source.zip">(Source)</a> | <a href="downloads/dmat-lang-1-0-documentation.txt" download="downloads/dmat-lang-1-0-documentation.txt">(Documentation)</a>
+    DMAT (Lang 1.0) - Linux : <a href="downloads/dmat-intepreter-1-0.out.zip" download="dmat-intepreter-1-0.out.zip">Download</a> | <a href="downloads/dmat-lang-1-0-source.zip" download="downloads/dmat-lang-1-0-source.zip">(Source)</a> | <a href="downloads/dmat-lang-1-0-documentation.txt" download="downloads/dmat-lang-1-0-documentation.txt">(Documentation)</a> | <a href="https://github.com/Dmatorg/dmat-intepreter/blob/main/README.md">(Github Source)</a>
+    
       
    
   `;
