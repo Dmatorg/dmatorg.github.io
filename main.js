@@ -294,7 +294,7 @@ Thanks for reading this documentation ended by ghgltggamerofficially at same day
 
   <h1>DMAT 1.0.1 Official Documentation</h1>
 <p><em>Written by ghgltggamer officially</em></p>
-<p><em>Writing started at: 20:56, 29 jun 2024
+<p><em>Writing started at: 20:56, 29 jun 2024</em></p>
 
 <h2>DMAT</h2>
 
@@ -306,7 +306,7 @@ Thanks for reading this documentation ended by ghgltggamerofficially at same day
 
 <h3>About Current Version</h3>
 <ul>
-  <li>This documentation was written for DMAT (Lang 1.0) and may not be accurate for future DMAT releases or versions.</li>
+  <li>This documentation was written for DMAT (Lang 1.0.1) and may not be accurate for future DMAT releases or versions.</li>
   <li>This version of DMAT only is able to convert ALBEDO images into NORMAL, HEIGHT, ROUGHNESS, and METALLIC maps.</li>
 </ul>
 
@@ -388,7 +388,7 @@ EXIT&BUILD
   <li><strong>DMAT_HEIGHTS</strong>: is used to define the HEIGHT MAP Output file</li>
   <li><strong>DMAT_ROUGHNESS</strong>: is used to define ROUGHNESS MAP Output file</li>
   <li><strong>DMAT_METALLIC</strong>: is used to define METALLIC MAP Output file</li>
-  <li><strong>DMAT_INTENSITY:</strong> (Used to define the Intensity of the S params, In simple language this will set the pixel intensity of the maps which can range from 0 to 255, 0 means highly pixalated also known as FOZ DTX HYPER NORMALS but these can look soo ugly due to pixel density and whien screen profile, 255 means so soft and contains the common normal map pixel informations which are widely used but this totay depnds on the albedo color pixels to be intensied, intensity will affect all the maps, 0 will bring it highly pixelated with strong colors and 255 will make more visible pixels and common color profile any number between 0 to 255 can be setted as intensity</li>
+  <li><strong>DMAT_INTENSITY</strong>: (Used to define the Intensity of the S params, In simple language this will set the pixel intensity of the maps which can range from 0 to 255, 0 means highly pixalated also known as FOZ DTX HYPER NORMALS but these can look soo ugly due to pixel density and whien screen profile, 255 means so soft and contains the common normal map pixel informations which are widely used but this totay depnds on the albedo color pixels to be intensied, intensity will affect all the maps, 0 will bring it highly pixelated with strong colors and 255 will make more visible pixels and common color profile any number between 0 to 255 can be setted as intensity</li>
   <li><strong>EXIT&BUILD</strong>: is used to finally exit the program; this is important because without this DMAT will only fill up the memory buffer but not build the PBR files as DMAT processes everything after exiting the program.</li>
 </ul>
 
