@@ -291,7 +291,10 @@ Thanks for reading this documentation ended by ghgltggamerofficially at same day
 
 // version 1.0.1
   const html_1_0_1 = `
-  <h1>DMAT - Dextel Material (Dextile Material) Domain-Specific Language for Image Processing</h1>
+  <h1>DMAT 1.0.1 - Dextel Material (Dextile Material) Domain-Specific Language for Image Processing</h1>
+  <p><i>
+  Written by ghgltggamer officially at : 21:09pm on 29 jun 2024
+  </i></p>
 
 <p>DMAT is a Domain-Specific Language designed for image processing tasks such as generating normal maps, height maps, roughness maps, and metallic maps from an albedo image. This repository contains the source code for the DMAT interpreter and an example of how to use it.</p>
 
