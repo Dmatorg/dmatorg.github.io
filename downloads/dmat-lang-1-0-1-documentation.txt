@@ -1,0 +1,88 @@
+DMAT - Dextel Material (Dextile Material) Domain-Specific Language for Image Processing
+
+DMAT is a Domain-Specific Language designed for image processing tasks such as generating normal maps, height maps, roughness maps, and metallic maps from an albedo image. This repository contains the source code for the DMAT interpreter and an example of how to use it.
+
+Features:
+- Generate normal maps from albedo images
+- Create height maps from albedo images
+- Create roughness maps from albedo images
+- Create metallic maps from albedo images
+
+Getting Started:
+
+Prerequisites:
+Make sure you have the following dependencies installed if you plan to compile the source code:
+- C++ compiler (g++ or clang++)
+
+Installation:
+You have two options to get started with DMAT:
+
+Option 1: Download Precompiled Executable (Linux)
+1. Download the precompiled executable from the project page:
+https://dmatorg.github.io/
+
+Option 2: Compile from Source
+1. Download the source code as a ZIP file:
+   - Go to the repository page: https://github.com/Dmatorg/dmat-intepreter/tree/main
+   - Click on the "Code" button and select "Download ZIP".
+2. Extract the ZIP file:
+unzip dmat-main.zip
+3. Navigate to the extracted directory:
+cd dmat-main
+4. Compile the source code:
+g++ -o dmat_compiler dmat_compiler.cpp -std=c++11
+
+Usage:
+Create a .dmat file with the following format:
+
+DMAT_ALBEDO: example_albedo.png
+DMAT_NORMALS: example_normal_map.png
+DMAT_HEIGHTS: example_height_map.png
+DMAT_ROUGHNESSS: example_roughness_map.png
+DMAT_METALICS: example_metallic_map.png
+EXIT&BUILD
+
+Run the DMAT compiler:
+./dmat_compiler
+
+or if you downloaded the precompiled executable:
+./dmat_compiler.out
+
+Follow the prompts to enter the path to your .dmat file. The output images will be generated and saved with the specified filenames.
+
+Example:
+Here is an example .dmat file:
+
+DMAT_ALBEDO: albedo.png
+DMAT_NORMALS: normal_map.png
+DMAT_HEIGHTS: height_map.png
+DMAT_ROUGHNESSS: roughness_map.png
+DMAT_METALICS: metallic_map.png
+EXIT&BUILD
+
+DMAT Language tutorial:
+DMAT Lang is powerful for designing PBR from Albedo and for doing this you need to be familiar with DMAT Lang Syntax!
+
+Syntax - Assignment Based:
+Assignment Based Syntax is the custom DMAT syntax where you need to assign some key values to DMAT in order to build your materials
+
+Params:
+- DMAT_ALBEDO: (Used to load the albedo image into the memory buffer, This image will be processed for making materials)
+- DMAT_NORMALS: (Used to load the normal map file name into the memory buffer normal map will be created with the given file name
+- DMAT_HEIGHTS: (Used to load the height map file name into the memory buffer height map will be created with the given file name
+- DMAT_ROUGHNESSS: (Used to load the roughness map file name into the memory buffer roughness map will be created with the given file name
+- DMAT_METALICS: (Used to load the metallic map file name into the memory buffer metallic map will be created with the given file name
+- DMAT_INTENSITY: (Used to define the Intensity of the S params, In simple language this will set the pixel intensity of the maps which can range from 0 to 255, 0 means highly pixelated also known as FOZ DTX HYPER NORMALS but these can look so ugly due to pixel density and white screen profile, 255 means so soft and contains the common normal map pixel informations which are widely used but this totally depends on the albedo color pixels to be intensified, intensity will affect all the maps, 0 will bring it highly pixelated with strong colors and 255 will make more visible pixels and common color profile any number between 0 to 255 can be set as intensity
+
+Note: DMAT is case and indentation sensitive means Upper case must be Upper case and Lower case must be lower case and don't add spaces between params like "DMAT_ALBEDO: a.png" dmat will count the space between : and a.png as file name and it will return correct way is "DMAT_ALBEDO:a.png"
+
+Contributing:
+Contributions are welcome! Please feel free to submit a pull request or open an issue.
+
+License:
+This project is licensed under the MIT License.
+
+Contact:
+For any questions or inquiries, please contact dmatorg@gmail.com.
+
+Visit the project page: https://dmatorg.github.io/
