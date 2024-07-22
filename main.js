@@ -154,6 +154,8 @@ function Download(){
       DMAT Downloads
     </h2>
 
+    DMAT (Lang 1.2) - Linux : <a href="downloads/dmat-intepreter-1.2.zip" download="dmat-intepreter-1.2.zip">Download</a> | <a href="downloads/dmat-intepreter-1.2-src.zip" download="dmat-intepreter-1.2-src.zip">(Source)</a> | <a href="downloads/dmat-1.2-documentation.txt" download="dmat-lang-1.2-documentation.txt">(Documentation)</a> | <a href="https://github.com/Dmatorg/dmat-intepreter/tree/v1.2">(Github Source)</a>
+    <br>
     DMAT (Lang 1.0.1) - Linux : <a href="downloads/dmat-intepreter-1-0-1.out.zip" download="dmat-intepreter-1-0-1.out.zip">Download</a> | <a href="downloads/dmat-lang-1-0-1-source.zip" download="downloads/dmat-lang-1-0-1-source.zip">(Source)</a> | <a href="downloads/dmat-lang-1-0-1-documentation.txt" download="downloads/dmat-lang-1-0-1-documentation.txt">(Documentation)</a> | <a href="https://github.com/Dmatorg/dmat-intepreter/tree/v1.0.1">(Github Source)</a>
     <br>
     DMAT (Lang 1.0) - Linux : <a href="downloads/dmat-intepreter-1-0.out.zip" download="dmat-intepreter-1-0.out.zip">Download</a> | <a href="downloads/dmat-lang-1-0-source.zip" download="downloads/dmat-lang-1-0-source.zip">(Source)</a> | <a href="downloads/dmat-lang-1-0-documentation.txt" download="downloads/dmat-lang-1-0-documentation.txt">(Documentation)</a> | <a href="https://github.com/Dmatorg/dmat-intepreter/blob/main">(Github Source)</a>
