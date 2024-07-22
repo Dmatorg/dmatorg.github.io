@@ -530,6 +530,7 @@ Thanks for reading this documentation ended by ghgltggamerofficially at same day
 
   var ver_1_2 = new Flexi_Stretcher('DMAT 1.2 Documentation (Online)', html_1_2);
   ver_1_2.render(content);
+  content.innerHTML+='<br>';
 
   var ver_1_0_1 = new Flexi_Stretcher('DMAT 1.0.1 Documentation (Online)', html_1_0_1);
   ver_1_0_1.render(content);
